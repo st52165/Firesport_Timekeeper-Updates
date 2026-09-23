@@ -1,6 +1,6 @@
 {
-  "releaseUrl": "https://github.com/st52165/Firesport_Timekeeper/releases/tag/test-tag-999",
+  "publishedAt": "2026-09-23T11:17:16Z",
   "releaseNotes": null,
-  "publishedAt": "2026-09-23T11:01:58Z",
-  "version": "test-tag-999"
+  "version": "2.2.6.2",
+  "releaseUrl": "https://github.com/st52165/Firesport_Timekeeper/releases/tag/v2.2.6.2"
 }
