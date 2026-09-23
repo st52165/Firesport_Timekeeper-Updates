@@ -1,14 +1,9 @@
 {
-  "downloadUrl": "https://github.com/st52165/Firesport_Timekeeper/releases/download/v2.2.6.3/Firesport_Timekeeper_Setup_v2.2.6.3.exe",
-  "releaseUrl": "https://github.com/st52165/Firesport_Timekeeper/releases/tag/v2.2.6.3",
-  "publishedAt": "2026-09-23T12:22:10Z",
-  "version": "2.2.6.3",
+  "releaseUrl": "https://github.com/st52165/Firesport_Timekeeper/releases/tag/v2.2.6.4",
+  "version": "2.2.6.4",
   "releaseNotes": [
-    "Přidáno automatické generování changelogu a úprava fetch-depth v CI",
-    "Do workflow build-and-release.yml byl přidán krok pro generování changelogu z commitů mezi posledními dvěma verzovanými tagy (nebo ze všech commitů, pokud žádný předchozí tag neexistuje). Výsledek se ukládá do changelog.txt a je použit jako release notes při nahrávání na GitHub Releases. U kroku checkout byl nastaven fetch-depth na 0 pro zpřístupnění všech commitů a tagů.",
-    "Přidán generate_release_notes do build-and-release.yml",
-    "Do kroku \"Upload to GitHub Releases\" byl přidán parametr generate_release_notes: true pro automatické generování poznámek k vydání při publikování release na GitHubu.",
-    "Přidán DOWNLOAD_URL do env a version.json",
-    "Do prostředí byl přidán parametr DOWNLOAD_URL pro získání URL assetu z release. PowerShell skript nyní ukládá tento downloadUrl do objektu v updates/version.json."
-  ]
+    "Úprava ReleaseNotes tak, aby vracela vždy pole (i prázdné)."
+  ],
+  "downloadUrl": "https://github.com/st52165/Firesport_Timekeeper/releases/download/v2.2.6.4/Firesport_Timekeeper_Setup_v2.2.6.4.exe",
+  "publishedAt": "2026-09-23T12:54:10Z"
 }
