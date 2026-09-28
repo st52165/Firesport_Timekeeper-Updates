@@ -1,11 +1,9 @@
 {
-  "version": "2.2.6.6",
-  "downloadUrl": "https://github.com/st52165/Firesport_Timekeeper/releases/download/v2.2.6.6/Firesport_Timekeeper_Setup_v2.2.6.6.exe",
-  "releaseUrl": "https://github.com/st52165/Firesport_Timekeeper/releases/tag/v2.2.6.6",
-  "publishedAt": "2026-09-28T15:57:05Z",
   "releaseNotes": [
-    "Vylepšení dialogů, menu a kontroly aktualizací",
-    "Byly upraveny rozměry a pozice dialogových oken a hlavního menu, sjednoceny velikosti a texty, a správně přiřazeny handlery. Přidány nové metody pro kontrolu aktualizací včetně tichého režimu a lepšího zpracování výjimek. Nahrazena metoda `ShowDialogWhenUpdateAvailable` novou `CheckUpdateAvailable` s podporou tichého režimu. Přidána třída `UpdateGuard` pro zamezení opakovaného zobrazení dialogu. Úprava logiky zobrazování informací o aktualizaci a podmíněná aktualizace verze v `UpdateSettingsService` dle režimu kompilace.",
-    "Opravy drobných chyb."
-  ]
+    "Opravy drobných chyb. Oprava chybné deserializace nastavení aktualizací."
+  ],
+  "publishedAt": "2026-09-28T19:01:33Z",
+  "downloadUrl": "https://github.com/st52165/Firesport_Timekeeper/releases/download/v2.2.6.7/Firesport_Timekeeper_Setup_v2.2.6.7.exe",
+  "version": "2.2.6.7",
+  "releaseUrl": "https://github.com/st52165/Firesport_Timekeeper/releases/tag/v2.2.6.7"
 }
