@@ -1,10 +1,10 @@
 {
   "downloadUrl": "https://github.com/st52165/Firesport_Timekeeper/releases/download/v2.2.6.9/Firesport_Timekeeper_Setup_v2.2.6.9.exe",
-  "releaseUrl": "https://github.com/st52165/Firesport_Timekeeper/releases/tag/v2.2.6.9",
-  "publishedAt": "2026-09-28T20:26:27Z",
-  "version": "2.2.6.9",
+  "publishedAt": "2026-09-28T20:45:07Z",
   "releaseNotes": [
-    "Přidána detekce zavření aplikace kvůli aktualizaci (WM_QUERYENDSESSION, WM_ENDSESSION).",
+    "Debug.",
     "Refactoring kódu."
-  ]
+  ],
+  "version": "2.2.6.9",
+  "releaseUrl": "https://github.com/st52165/Firesport_Timekeeper/releases/tag/v2.2.6.9"
 }
