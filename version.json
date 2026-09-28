@@ -1,9 +1,35 @@
 {
-  "releaseUrl": "https://github.com/st52165/Firesport_Timekeeper/releases/tag/v2.2.6.4",
-  "version": "2.2.6.4",
+  "downloadUrl": "https://github.com/st52165/Firesport_Timekeeper/releases/download/v2.2.6.5/Firesport_Timekeeper_Setup_v2.2.6.5.exe",
+  "releaseUrl": "https://github.com/st52165/Firesport_Timekeeper/releases/tag/v2.2.6.5",
+  "publishedAt": "2026-09-28T13:54:37Z",
+  "version": "2.2.6.5",
   "releaseNotes": [
-    "Úprava ReleaseNotes tak, aby vracela vždy pole (i prázdné)."
-  ],
-  "downloadUrl": "https://github.com/st52165/Firesport_Timekeeper/releases/download/v2.2.6.4/Firesport_Timekeeper_Setup_v2.2.6.4.exe",
-  "publishedAt": "2026-09-23T12:54:10Z"
+    "Refaktorizace AboutDialog a systému aktualizací",
+    "Byly přesunuty a rozděleny soubory AboutDialog do View\\About (AboutDialog, AboutDialogFormatter, UpdateState). AboutDialog nyní podporuje asynchronní kontrolu aktualizací, různé stavy a opakování kontroly. Přidána služba UpdateUrlOpener pro bezpečné otevírání URL. UpdateAvailableDialog přijímá UpdateInfo a využívá UpdateUrlOpener. UpdateChecker a UpdateSettingsService upraveny pro novou strukturu a správu verzí. V MainForm odstraněny testovací zbytky a upraveno otevírání dialogů. Drobné úpravy v návrhářích (tlačítka, rozložení, velikost). Výsledkem je přehlednější, robustnější a uživatelsky přívětivější systém aktualizací.",
+    "Přepracování ExpanderControl: layout a scrollování",
+    "Byla přepracována implementace ExpanderControl – změněn způsob zobrazování a rozměrování obsahu. TextBox již není dockován na Fill, ale na Top, jeho výška se dynamicky mění podle obsahu. Panel s obsahem nyní využívá AutoScroll, AutoSize a je dockován nahoře. Viditelnost obsahu je řízena přes contentPanel.Visible. Scrollování je řešeno přes panel a událost MouseWheel, podpora ScrollBars na TextBoxu byla odstraněna. Přidána metoda RefreshScrollableParents pro správné přepočítání layoutu rodičovských kontejnerů. Odstraněny nepotřebné metody pro výpočet výšky a resize. Refaktoring pro lepší podporu dynamického rozměrování a scrollování.",
+    "Refaktoring AboutDialog a ExpanderControl, vylepšení UI",
+    "Přeorganizovány panely verzí a expanderů v AboutDialog, přidány nové panely pro verzi a datum aktualizace, změněny výchozí texty. Expander panely přesunuty na konec inicializace, zvýšena max. výška obsahu. V ExpanderControl přidána obsluha EnabledChanged pro šedou šipku při zakázání, přeformátován kód a zpřehledněny metody. Zlepšena čitelnost a chování při změně Enabled.",
+    "Vylepšení dialogu O aplikaci: nové panely a pole",
+    "Přidány panely a needitovatelná textová pole pro zobrazení verze a data vydání nainstalované i dostupné aktualizace v dialogu O aplikaci. Informace se již nezobrazují v popiscích, ale v textových polích vedle popisků pro lepší čitelnost a rozložení. Upraveny metody pro nastavování hodnot a provedeny drobné úpravy rozměrů a umístění ovládacích prvků.",
+    "Doplněn Copyright, drobné úpravy designu v AboutDialog.",
+    "Návrh designu AboutDialog (zatím bez funkčního zobrazení dat).",
+    "AboutDialog - BaseVersion.",
+    "Přidána komponenta ExpanderControl do BaseLib",
+    "Byla přidána nová uživatelská komponenta ExpanderControl (Controls\\ExpanderControl.cs, .Designer.cs, .resx) představující rozbalovací panel s hlavičkou a obsahem v TextBoxu. Komponenta umožňuje sbalení/rozbalení kliknutím na hlavičku. Aktualizován BaseLib.csproj pro správné sestavení a zahrnutí zdrojů.",
+    "Přidán dialog pro nastavení aktualizací a jeho služba",
+    "Přidána služba UpdateSettingsDialogService pro zobrazení a správu dialogu nastavení aktualizací. V hlavním menu MainForm přidána položka pro otevření tohoto dialogu. UpdateSettingsDialog nyní pracuje s instancí nastavení, načítá a ukládá hodnoty. Přidány obslužné metody pro tlačítka v dialogu (obnovení upozornění, stažení nové verze). Nový soubor UpdateSettingsDialogService.cs. Drobné úpravy rozložení a velikostí prvků v MainForm.Designer.cs.",
+    "Úprava návrhu UpdateSettingsDialog.",
+    "Přidána správa aktualizací a přepracován dialog",
+    "Byla přidána podpora pro správu a ukládání nastavení aktualizací (UpdateSettings, UpdateSettingsSerializer, UpdateSettingsService). Dialog UpdateAvailableDialog byl přepracován, nyní vrací strukturu UpdateDialogInfo s volbou uživatele. Přidány nové soubory pro práci s výsledkem dialogu. Kód UpdateSettingsDialog přesunut do View\\Settings. Přidána třída UpdateChecker pro kontrolu nové verze při spuštění aplikace, využívá služby AppUpdates. V MainForm se kontrola aktualizací spouští automaticky. Upraveny cesty a názvy souborů v .csproj. Dialog UpdateAvailableDialog byl vizuálně zmenšen.",
+    "Úprava zobrazení hlášení při zavírání modulu Časomíra. Nyní se hlášení zobrazí pouze pokud jde o zavření uživatelem.",
+    "Úpravy dialogů aktualizací",
+    "Třída a soubory UpdateAvailableWindow byly přejmenovány na UpdateAvailableDialog včetně úpravy názvů tříd a jejich použití. V UpdateAvailableDialog byly labely verzí nahrazeny readonly TextBoxy. Přidán nový dialog UpdateSettingsDialog pro nastavení kontrol aktualizací a správu upozornění. Aktualizovány resource soubory pro nové a upravené dialogy. Úpravy v .csproj reflektují změny v souborech a závislostech.",
+    "Přidáno okno pro informaci o aktualizaci aplikace",
+    "Přidány reference na grafické knihovny do AppUpdates.csproj (PresentationCore, PresentationFramework, System.Drawing, System.Windows.Forms, System.Xaml, WindowsBase). Přidány soubory UpdateAvailableWindow.cs, .Designer.cs a .resx do složky View pro nové okno s informací o aktualizaci. Designer obsahuje návrh okna s popisky, tlačítky a volbami, UpdateAvailableWindow.cs implementuje logiku formuláře. Odstraněna prázdná složka Views\\.",
+    "Přidán projekt AppUpdates pro správu aktualizací",
+    "Do řešení přidán nový projekt AppUpdates (.NET 4.8) s implementací kontroly, stažení a instalace aktualizací aplikace. Přidány třídy pro práci s informacemi o aktualizaci, služby pro kontrolu aktualizací a pomocné metody pro práci s URL. Aktualizovány soubory .sln a přidán packages.config s potřebnými NuGet balíčky.",
+    "Přepracováno hlavní menu, přidána sekce Nástroje",
+    "Do projektu přidán odkaz na AppUpdates. V MainForm.Designer.cs kompletně přepracováno hlavní menu: odstraněna sekce Nápověda, přidána sekce Nástroje s položkami pro aktualizace a informace o produktu. Aktualizovány texty, velikosti a názvy proměnných, odstraněny staré položky a přidány nové privátní proměnné pro menu."
+  ]
 }
