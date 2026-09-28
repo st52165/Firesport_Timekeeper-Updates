@@ -1,9 +1,10 @@
 {
+  "publishedAt": "2026-09-28T19:31:28Z",
+  "releaseUrl": "https://github.com/st52165/Firesport_Timekeeper/releases/tag/v2.2.6.8",
   "releaseNotes": [
-    "Opravy drobných chyb. Oprava chybné deserializace nastavení aktualizací."
+    "Drobné opravy chyb.",
+    "V souboru setup.iss InnoSetup byla přidána volba CloseApplications=force, která při instalaci vynutí zavření běžících aplikací, jež mohou bránit instalaci."
   ],
-  "publishedAt": "2026-09-28T19:01:33Z",
-  "downloadUrl": "https://github.com/st52165/Firesport_Timekeeper/releases/download/v2.2.6.7/Firesport_Timekeeper_Setup_v2.2.6.7.exe",
-  "version": "2.2.6.7",
-  "releaseUrl": "https://github.com/st52165/Firesport_Timekeeper/releases/tag/v2.2.6.7"
+  "downloadUrl": "https://github.com/st52165/Firesport_Timekeeper/releases/download/v2.2.6.8/Firesport_Timekeeper_Setup_v2.2.6.8.exe",
+  "version": "2.2.6.8"
 }
